@@ -1,12 +1,12 @@
 AsyncRabbitTemplate with Spring Boot
 
-Sample project used in
+Sample project used in [http://zoltanaltfatter.com/2016/09/26/async-rabbit-template-with-spring-boot](http://zoltanaltfatter.com/2016/09/26/async-rabbit-template-with-spring-boot/)
 
 1. Build the project
 
 ```
 $ git clone https://github.com/altfatterz/async-rabbit-template
-$ cd rabbit-dead-letter-queue
+$ cd async-rabbit-template
 $ mvn clean install
 ```
 
