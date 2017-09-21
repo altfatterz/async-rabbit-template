@@ -19,13 +19,13 @@ $ rabbitmq-server
 3. Start up the consumer
 
 ```
-$ java -jar consumer/target/consumer-0.0.1-SNAPSHOT.jar
+$ java -jar consumer/target/consumer-1.0-SNAPSHOT.jar
 ```
 
 4. Start up the producer
 
 ```
-$ java -jar producer/target/producer-0.0.1-SNAPSHOT.jar
+$ java -jar producer/target/producer-1.0-SNAPSHOT.jar
 ```
 
 5. Inspect the producer logs
