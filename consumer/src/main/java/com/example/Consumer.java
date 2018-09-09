@@ -14,12 +14,13 @@ import org.springframework.stereotype.Component;
 public class Consumer {
 
     @RabbitListener(queues = ConsumerConfig.FIBO_CALCULATOR_REQUEST_QUEUE_NAME)
-    public FiboCalcResponse process(@Payload FiboCalcRequest request) {
+    public FiboCalcResponse process(@Payload FiboCalcRequest request) throws InterruptedException {
+        Thread.sleep(1500);
         log.info("Received '{}'", request.getNumber());
         return new FiboCalcResponse(request.getNumber(), fibo(request.getNumber()));
     }
 
-    static long fibo(int n) {
+    static long fibo(int n) throws InterruptedException {
          if (n <= 1) return n;
         else return fibo(n-1) + fibo(n-2);
     }
